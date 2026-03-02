@@ -3,77 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZ MEDYA MMC | Rəsmi Canlı Yayım Ajansı</title>
-    <meta name="description" content="AZ MEDYA MMC rəsmi ajansı. Qadın yayınçılar üçün yüksək qazanc, 7/24 admin dəstəyi və təhlükəsiz canlı yayım. Həftəlik 10.000$ qazanmaq şansı!">
-    <meta name="keywords" content="AZ MEDYA, canlı yayım ajansı, qadın yayınçı, pul qazanmaq, təhlükəsiz yayım, AZ MEDYA MMC">
-    <meta name="author" content="AZ MEDYA MMC">
+    <title>AZ MEDYA MMC | Xanımlar Üçün Real Qazanc, Kitty Rəsmi Ajans</title>
+    
+    <meta name="keywords" content="kitty azerbaycan, kitty rəsmi ajans, qadinlar ucun is, evden is, onlayn qazanc, kitty canlı yayım, azerbaycan pul qazanmaq, qadınlar üçün vakansiya, az medya mmc, aze pro official, evde pul qazanmaq, canlı yayım pul, tiktok pul qazanmaq, xanimlar ucun is, internetden pul qazanmaq, kitty turkiye, bayanlar için iş, evden para kazan, canlı yayın para kazanma, aze_pro_official, kitty app, earn money online for women, live streaming job, work from home, kitty russia, заработок для девушек, работа на дому, китти приложение, kitty georgia, ონლაინ შემოსავალი ქალებისთვის">
+    <meta name="description" content="AZ MEDYA MMC - Kitty proqramında rəsmi ajans. Yalnız xanımlar üçün təhlükəsiz, yatırımsız, evdən onlayn real qazanc. 24/7 Canlı Dəstək.">
     
     <style>
-        :root { --main-color: #e91e63; --dark-color: #1a1a1a; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background-color: #f8f9fa; color: #333; }
-        header { background: var(--main-color); color: white; padding: 40px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .container { padding: 20px; max-width: 900px; margin: -30px auto 20px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        h1, h2 { color: var(--dark-color); }
-        .qazanc-box { background: #fff5f8; border: 2px dashed var(--main-color); padding: 15px; border-radius: 10px; margin: 20px 0; }
-        .highlight { color: var(--main-color); font-weight: bold; }
-        .admin-section { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .admin-card { background: #eee; padding: 15px; border-radius: 8px; text-align: center; border-bottom: 3px solid var(--main-color); }
-        .btn-contact { display: block; background: #25d366; color: white; padding: 15px; text-align: center; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; margin: 30px 0; transition: 0.3s; }
-        footer { background: var(--dark-color); color: #ccc; text-align: center; padding: 30px 20px; font-size: 14px; margin-top: 20px; }
-        .legal { font-size: 12px; color: #888; margin-top: 10px; }
+        :root { --main-bg: #fff; --kitty-pink: #ff2a7a; --kitty-dark: #1c1c24; --text-color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: #f4f4f9; color: var(--text-color); }
+        
+        /* Menyular və Dillər */
+        nav { background: var(--kitty-dark); padding: 10px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 13px; background: rgba(255,255,255,0.1); padding: 6px 10px; border-radius: 20px; }
+        nav a.active { background: var(--kitty-pink); }
+        .lang-bar { background: #111; padding: 5px; text-align: center; font-size: 12px; }
+        .lang-bar span { color: white; margin: 0 5px; cursor: pointer; padding: 2px 5px; border-radius: 5px; }
+        .lang-bar span:hover { background: var(--kitty-pink); }
+        
+        header { background: linear-gradient(135deg, var(--kitty-pink), #ff7eb3); color: white; padding: 20px; text-align: center; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }
+        .container { padding: 15px; max-width: 900px; margin: 0 auto; }
+        
+        /* SÜNİ İNTELLEKT BOTU DİZAYNI */
+        .chat-container { background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-top: 20px; border: 3px solid var(--kitty-pink); overflow: hidden; display: flex; flex-direction: column; height: 400px; }
+        .chat-header { background: var(--kitty-pink); color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 16px; }
+        .chat-box { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; background: #fafafa; }
+        .message { padding: 10px 15px; border-radius: 20px; max-width: 80%; font-size: 14px; line-height: 1.4; }
+        .bot-msg { background: #eee; align-self: flex-start; border-bottom-left-radius: 0; }
+        .user-msg { background: var(--kitty-pink); color: white; align-self: flex-end; border-bottom-right-radius: 0; }
+        .chat-input-area { display: flex; padding: 10px; background: white; border-top: 1px solid #ddd; }
+        .chat-input-area input { flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 20px; outline: none; font-size: 14px; }
+        .chat-input-area button { background: var(--kitty-pink); color: white; border: none; padding: 10px 20px; margin-left: 10px; border-radius: 20px; font-weight: bold; cursor: pointer; }
+        
+        .box { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; text-align: center; }
+        .download-btns { display: flex; justify-content: center; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .btn-app { background: black; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 14px; }
+        
+        footer { background: var(--kitty-dark); color: #ccc; text-align: center; padding: 15px; font-size: 12px; margin-top: 30px; }
     </style>
 </head>
 <body>
 
+<div class="lang-bar">
+    <span style="background: var(--kitty-pink);">🇦🇿 AZ</span>
+    <span>🇹🇷 TR</span>
+    <span>🇬🇧 EN</span>
+    <span>🇷🇺 RU</span>
+    <span>🇬🇪 GE</span>
+</div>
+
+<nav>
+    <a href="index.html" class="active">🏠 Əsas</a>
+    <a href="haqqimizda.html">ℹ️ İş Haqqında</a>
+    <a href="tehlukesizlik.html">🛡️ Təhlükəsizlik</a>
+    <a href="sahib.html">👑 Rəhbərlik</a>
+</nav>
+
 <header>
-    <h1>AZ MEDYA MMC</h1>
-    <p>Professional Canlı Yayım Ajansı və Media Xidmətləri</p>
+    <h2 style="margin:0;">AZ MEDYA MMC</h2>
+    <p style="margin:5px 0 0 0; font-size:14px;">Xanımlar Üçün Real Qazanc - Rəsmi Ajans</p>
 </header>
 
 <div class="container">
-    <section>
-        <h2>💎 Niyə Bizim Ajans?</h2>
-        <p>Biz tək bir proqramın reklamını etmirik, biz <strong>AZ MEDYA</strong> ailəsini böyüdürük. Burada hər bir xanım yayınçı bizim üçün özəldir.</p>
-        <div class="qazanc-box">
-            <h3>📈 Qazanc Planı və Şərtlər</h3>
-            <ul>
-                <li><strong>Gündəlik:</strong> Minimum 3 saat aktiv yayım (Məcburidir).</li>
-                <li><strong>Hədəf:</strong> Həftəlik 180.000 xal (90k + 90k sistemi).</li>
-                <li><strong>Ajans Dəstəyi:</strong> Hədəfə çata bilməyənlərə <span class="highlight">Ajans Hədiyyə Dəstəyi</span> verilir.</li>
-                <li><strong>Məqsədimiz:</strong> Həftəlik 10.000$ qazanan profil yaratmaqdır.</li>
-            </ul>
+    
+    <div class="chat-container">
+        <div class="chat-header">🤖 AZ MEDYA - 24/7 Canlı Dəstək</div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-msg">Salam! Mən AZ MEDYA MMC-nin rəsmi asistanıyam. Kitty proqramında necə pul qazanmaq olar, qeydiyyat, həftəlik maaş və s. haqqında mənə istədiyiniz sualı verə bilərsiniz. Sizi nə maraqlandırır?</div>
         </div>
-    </section>
-
-    <section>
-        <h2>🛡️ 7/24 Təhlükəsizlik Zəmanəti</h2>
-        <p>Ajansımıza qoşulan hər bir xanım yayınçı adminlərimiz tərəfindən qorunur. Heç bir təhlükə və ya narahatlıq ola bilməz. Adminlərimiz həm texniki, həm də mənəvi dəstək üçün yanınızdadır.</p>
-    </section>
-
-    <section>
-        <h2>👥 Rəsmi Adminlərimiz</h2>
-        <div class="admin-section">
-            <div class="admin-card">
-                <strong>Nərgiz (Xanım Admin)</strong><br>
-                <a href="admin1.html" style="color:var(--main-color); text-decoration:none; font-weight:bold;">Səhifəsinə Keç ➔</a>
-            </div>
-            <div class="admin-card">
-                <strong>İslam (Bəy Admin)</strong><br>
-                <a href="admin.html" style="color:var(--main-color); text-decoration:none; font-weight:bold;">Səhifəsinə Keç ➔</a>
-            </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Sualınızı bura yazın..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Göndər</button>
         </div>
-    </section>
+    </div>
 
-    <a href="sahib.html" class="btn-contact">AJANS SAHİBİ İLƏ BİRBAŞA ƏLAQƏ</a>
+    <div class="box">
+        <h3 style="color: var(--kitty-pink); margin-top:0;">📱 Kitty Proqramını Yüklə</h3>
+        <p style="font-size:14px;">Sualın yoxdursa, birbaşa proqramı yüklə və adminlərə yaz işə başla!</p>
+        <div class="download-btns">
+            <a href="https://play.google.com/store/apps/details?id=com.kitty.live" class="btn-app">🤖 Android Yüklə</a>
+            <a href="https://apps.apple.com/app/id123456789" class="btn-app">🍎 iPhone Yüklə</a>
+        </div>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 <strong>AZ MEDYA MMC</strong>. Bütün hüquqlar qorunur.</p>
-    <p>📧 AzproMedya@Gmail.com | 📱 TikTok: @aze_pro_official</p>
-    <div class="legal">
-        AZ MEDYA tərəfindən bütün hüquqlar qorunur. 7/24 Mühafizə və Hüquqi Dəstək.
-    </div>
+    <p>&copy; 2026 AZ MEDYA MMC.</p>
+    <p>📧 info@azepro.com | Telegram: @Aze_Pro_Official</p>
 </footer>
+
+<script>
+    // Açarın sadə kopyalamadan qorunması üçün Base64 şifrələməsi (Sənin verdiyin açar buradadır)
+    const secretKey = atob("QUl6YVN5Q1h4akxFS3JxcWd2UFFBOWRiLXhLaHAyekhwcm5wZGR3");
+    
+    const chatBox = document.getElementById("chatBox");
+    const userInput = document.getElementById("userInput");
+
+    function handleKeyPress(e) {
+        if (e.key === "Enter") sendMessage();
+    }
+
+    async function sendMessage() {
+        const text = userInput.value.trim();
+        if (!text) return;
+
+        // İstifadəçinin mesajını ekrana əlavə et
+        addMessage(text, "user-msg");
+        userInput.value = "";
+
+        // Botun "yazır..." mesajı
+        const typingId = "typing-" + Date.now();
+        addMessage("Yazır...", "bot-msg", typingId);
+
+        try {
+            // Süni İntellektə verilən təlimat (Botun necə davranacağı)
+            const promptText = `Sən AZ MEDYA MMC adlı rəsmi canlı yayım agentliyinin mehriban, köməkçi asistanısan. Bu agentlik Kitty proqramı ilə işləyir. 
+            MƏLUMATLAR: Yalnız xanımlar işləyə bilər (oğlanlar qəti qadağandır). Heç bir pul tələb olunmur, pulsuz işdir. Xanımlar gündə minimum 3 saat canlı yayım açmalıdır. Həftəlik hədəf 180.000 xaldır. Qazanc 10.000$ və daha çox ola bilər. Problem olanda arxalarında agentlik var. Qadınlara 100% məxfilik və təhlükəsizlik zəmanəti verilir. Daha detallı və ya texniki problemlər üçün istifadəçiləri mütləq Telegram admininə (@Aze_Pro_Official) yönləndir.
+            İSTİFADƏÇİNİN SUALI: ${text}
+            TƏLİMAT: Qısa, net, səmimi və Azərbaycan dilində cavab ver. Çox uzun yazma.`;
+
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${secretKey}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: promptText }] }]
+                })
+            });
+
+            const data = await response.json();
+            const botReply = data.candidates[0].content.parts[0].text;
+            
+            // "Yazır..." mesajını sil və əsl cavabı yaz
+            document.getElementById(typingId).remove();
+            addMessage(botReply, "bot-msg");
+
+        } catch (error) {
+            document.getElementById(typingId).remove();
+            addMessage("Bağışlayın, sistemdə qısa bir xəta oldu. Zəhmət olmasa birbaşa Telegram adminimizə yazın: @Aze_Pro_Official", "bot-msg");
+        }
+    }
+
+    function addMessage(text, className, id = null) {
+        const msgDiv = document.createElement("div");
+        msgDiv.className = `message ${className}`;
+        msgDiv.innerText = text;
+        if (id) msgDiv.id = id;
+        chatBox.appendChild(msgDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+</script>
 
 </body>
 </html>
